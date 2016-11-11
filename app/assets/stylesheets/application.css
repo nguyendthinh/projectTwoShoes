@@ -49,3 +49,9 @@ h1 a {
   font-style: italic;
   text-decoration: none;
 }
+
+.slides {
+  width: 750px;
+  length: 750px;
+  display: inline-block;
+}
