@@ -9,6 +9,12 @@
   </head>
 
   <body>
+  <nav>
+    <%= link_to "Homepage", brands_path%>
+    <% @brands.each do |brand| %>
+    <%= link_to brand.name, brand %>
+    <% end %>
+  </nav>
     <%= yield %>
   </body>
 </html>
