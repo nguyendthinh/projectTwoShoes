@@ -7,14 +7,18 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-  <nav>
-    <%= link_to "Homepage", brands_path%>
-    <% @brands.each do |brand| %>
-    <%= link_to brand.name, brand %>
-    <% end %>
-  </nav>
+    <header>
+      <h1><%= link_to "DECADE FOOTWEAR", brands_path %></h1>
+    <nav>
+      <% @brands.each do |brand| %>
+      <%= link_to brand.name, brand %>///
+      <% end %>
+    </nav>
+  </header>
+  <hr>
+  <section>
     <%= yield %>
+  </section>
   </body>
 </html>

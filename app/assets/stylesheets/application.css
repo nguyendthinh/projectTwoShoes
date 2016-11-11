@@ -14,7 +14,38 @@
  *= require_self
  */
 
-img {
-  width: 50%;
-  length: 50%;
+html {
+  background-color: black;
+}
+
+nav > a {
+  color: white;
+  text-decoration: none;
+  font-family: Impact;
+  letter-spacing: 1.5px;
+  font-size: 1.5em;
+}
+
+a:hover {
+  color: red;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  padding: 15px;
+  margin-top: -10px;
+}
+
+h1 a {
+  color: red;
+  font-family: "Arial Black";
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 5px;
+  font-style: italic;
+  text-decoration: none;
 }

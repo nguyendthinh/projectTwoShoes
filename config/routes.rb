@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'sneaker/index'
+
+  get 'sneaker/show'
+
+  get 'sneaker/edit'
+
+  get 'sneaker/new'
+
   root 'brands#index'
 
   resources :brands

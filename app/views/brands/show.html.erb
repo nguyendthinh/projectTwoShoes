@@ -1,4 +1,9 @@
+<h2 id="brandname"><%= @brand.name %></h2>
+<section id="shoesection">
 <% @brand.sneakers.each do |sneaker| %>
-<h2><%= sneaker.name %></h2>
+<div class="sneaker"><a href="/sneakers/<%= sneaker.id %>">
 <img src="<%= sneaker.img_url %>">
+<h2 class="sneakername"><%= sneaker.name %></h2>
+</a></div>
 <% end %>
+</section>
