@@ -10,7 +10,7 @@ h2 {
 
 #brandname {
   font-size: 2.5em;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 img {
@@ -30,4 +30,16 @@ a {
 
 .sneakername:hover {
   color: red;
+}
+
+#shoesection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sneaker {
+  margin: 10px;
 }

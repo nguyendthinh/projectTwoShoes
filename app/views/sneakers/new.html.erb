@@ -1,2 +1,19 @@
-<h1>Sneaker#new</h1>
-<p>Find me in app/views/sneaker/new.html.erb</p>
+<h2>Add a New Sneaker</h2>
+<%= form_for @sneaker do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :img_url %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label :shoesize %>
+  <%= f.text_field :shoesize %>
+
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+
+  <%= f.label :brand_id %>
+  <%= f.text_field :brand_id %>
+
+  <%= f.submit "Submit" %>
+<% end %>

@@ -18,20 +18,23 @@ html {
   background-color: black;
 }
 
-nav > a {
+a {
   color: white;
+}
+
+nav > a {
   text-decoration: none;
   font-family: Impact;
   letter-spacing: 1.5px;
   font-size: 1.5em;
 }
 
-a:hover {
+nav > a:hover {
   color: red;
 }
 
 header {
-  text-align: center;
+  margin-top: -30px;
 }
 
 nav {
@@ -40,18 +43,44 @@ nav {
   margin-top: -10px;
 }
 
+#usernav {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  background-color: red;
+  align-items: center;
+}
+
+.usersign {
+  margin-left: 45%;
+  /*margin-top: 40px;*/
+}
+
+.usersign a {
+  color: white;
+}
+
 h1 a {
-  color: red;
+  color: white;
   font-family: "Arial Black";
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   margin-top: 5px;
   font-style: italic;
   text-decoration: none;
 }
 
+h1 a:hover {
+  color: none;
+}
+
 .slides {
-  width: 750px;
-  length: 750px;
+  width: 80%;
+  height: auto;
   display: inline-block;
+}
+
+#brandnav {
+  margin-top: 1px;
+  background-color: black;
 }

@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 20161111162441) do
 
   create_table "orders", force: :cascade do |t|
     t.integer  "users_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["created_at"], name: "index_orders_on_created_at", using: :btree
-    t.index ["updated_at"], name: "index_orders_on_updated_at", using: :btree
+    t.integer  "sneakers_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["sneakers_id"], name: "index_orders_on_sneakers_id", using: :btree
     t.index ["users_id"], name: "index_orders_on_users_id", using: :btree
   end
 
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20161111162441) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "orders", "sneakers", column: "sneakers_id"
   add_foreign_key "orders", "users", column: "users_id"
   add_foreign_key "sneakers", "brands"
 end

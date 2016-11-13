@@ -12,7 +12,11 @@ p {
 }
 
 .sneakerpic {
-  width: 800px;
+  width: 50%;
   height: auto;
   text-align: center;
+}
+
+.addtocart:hover {
+  color: red;
 }

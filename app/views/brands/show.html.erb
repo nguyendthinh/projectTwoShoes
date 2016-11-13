@@ -1,9 +1,12 @@
-<h2 id="brandname"><%= @brand.name %></h2>
+<h2 id="brandname"><%= @brand.name %> <%= link_to("(+)", new_sneaker_path) if @current_user %></h2>
 <section id="shoesection">
 <% @brand.sneakers.each do |sneaker| %>
 <div class="sneaker"><a href="/sneakers/<%= sneaker.id %>">
 <img src="<%= sneaker.img_url %>">
-<h2 class="sneakername"><%= sneaker.name %></h2>
-</a></div>
+<h2 class="sneakername"><%= sneaker.name %><br><span style="color:red"><%= sneaker.price %></span> </h2>
+</a>
+<%= link_to("Edit", edit_sneaker_path) if @current_user %>
+<%= link_to "/ Delete", @sneaker, method: :delete, class: "delete" if @current_user%>
+</div>
 <% end %>
 </section>
