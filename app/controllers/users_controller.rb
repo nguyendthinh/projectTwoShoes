@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
-  include ActiveModel::SecurePassword:InstanceMethodsOnActivation
+  include ActiveModel::SecurePassword
   include ActiveModel::Validations
-  has_secure_password validations: false
   validates :username, presence: true
   validates :password, presence: true
 
@@ -15,7 +14,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    redirect_to users_path(@user)
+    redirect_to brands_path
   end
 
   def show

@@ -1,4 +1,4 @@
-<h2 id="brandname"><%= @brand.name %> <%= link_to("(+)", new_brand_sneaker_path(@brand.id)) if @current_user %></h2>
+<h2 id="brandname"><%= @brand.name %> <%= link_to("(+)", new_brand_sneaker_path(@brand.id)) if @current_user && @current_user.admin? %></h2>
 <nav>
   <div class="size">
   <h3>
@@ -16,7 +16,7 @@
         <img src="<%= sneaker.img_url %>">
         <h2 class="sneakername"><%= sneaker.name %><br><span style="color:yellow"><%= sneaker.price %></span> </h2>
       </a>
-      <%= link_to "Edit", edit_sneaker_path(sneaker.id) if @current_user %>
+      <%= link_to "Edit", edit_sneaker_path(sneaker.id) if @current_user && @current_user.admin? %>
     </div>
   <% end %>
   </section>
