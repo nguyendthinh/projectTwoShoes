@@ -15,6 +15,10 @@ p {
   width: 50%;
   height: auto;
   text-align: center;
+  // border-style: outset;
+  border-width: 5px;
+  // border-radius: 30px;
+  clear: both;
 }
 
 .addtocart {
@@ -26,7 +30,28 @@ p {
   border-radius: 10px;
   padding: .5px;
 }
-//
+
 h3 {
   line-height: 10px;
 }
+
+// .sneakerpic:hover {
+//
+// }
+
+// .sneaker {
+//   margin: 10px;
+//   border-style: outset;
+//   border-width: 5px;
+//   border-radius: 30px;
+// }
+//
+// .sneaker img {
+//   border-radius: 25px 25px 0 0;
+// }
+//
+// .sneaker:hover {
+//   border-style: inset;
+//   border-color: red;
+//   box-shadow: 2px 2px 1px yellow;
+// }

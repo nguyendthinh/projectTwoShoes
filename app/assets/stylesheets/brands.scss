@@ -10,7 +10,7 @@ h2 {
 
 #brandname {
   font-size: 2.5em;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: white;
 }
 
@@ -43,17 +43,29 @@ a {
 
 .sneaker {
   margin: 10px;
-  border-style: outset;
+  // border-style: outset;
   border-width: 5px;
   border-radius: 30px;
 }
 
-.sneaker img {
-  border-radius: 25px 25px 0 0;
-}
-
-.sneaker:hover {
-  border-style: inset;
+.sneaker img:hover {
+  border-style: solid;
   border-color: red;
   box-shadow: 2px 2px 1px yellow;
+  // border-radius: 25px 25px 0 0;
+}
+
+// .sneaker:hover {
+//   // border-style: inset;
+//   border-color: red;
+//   box-shadow: 2px 2px 1px yellow;
+// }
+
+.size {
+  color: white;
+  font-family: Arial;
+}
+
+.size a:hover {
+  color: red;
 }

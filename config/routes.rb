@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   root 'brands#index'
 
 
-  resources :brands, only: [:new, :create, :new, :create, :edit, :update, :destroy, :show]
+  resources :brands do
+    resources :sneakers, only: [:new, :create, :edit, :update, :destroy, :show]
+  end
   resources :sneakers, only: [:new, :create, :edit, :update, :destroy, :show]
   resources :users
   resource :session

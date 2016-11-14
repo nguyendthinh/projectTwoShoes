@@ -15,8 +15,14 @@
  */
 
 html {
-background-color: black;
+  background: url("https://www.walldevil.com/wallpapers/a39/background-rgency-black-texture-wallpaper-metal-pictures-wallpapers-static.jpg");
+/*background: linear-gradient(to right, black, gray);*/
 height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -50,6 +56,7 @@ nav {
   text-align: left;
   background-color: red;
   align-items: center;
+  /*width: 100%;*/
 }
 
 .usersign {
@@ -80,7 +87,7 @@ h1 {
 }
 
 .slides {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: inline-block;
 }
@@ -94,4 +101,5 @@ footer {
   font-family: "Arial Black";
   margin-top: 60px;
   background-color: red;
+  padding: -10px;
 }

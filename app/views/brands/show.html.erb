@@ -1,11 +1,25 @@
-<h2 id="brandname"><%= @brand.name %> <%= link_to("(+)", new_sneaker_path) if @current_user %></h2>
-<section id="shoesection">
-<% @brand.sneakers.each do |sneaker| %>
-<div class="sneaker"><a href="/sneakers/<%= sneaker.id %>">
-<img src="<%= sneaker.img_url %>">
-<h2 class="sneakername"><%= sneaker.name %><br><span style="color:red"><%= sneaker.price %></span> </h2>
-</a>
-<%= link_to "Edit", edit_sneaker_path(sneaker.id) if @current_user %>
-</div>
-<% end %>
-</section>
+<h2 id="brandname"><%= @brand.name %> <%= link_to("(+)", new_brand_sneaker_path(@brand.id)) if @current_user %></h2>
+<nav>
+  <div class="size">
+  <h3>
+    <a href="#">MEN</a>&nbsp;&nbsp;&nbsp;
+    <a href="#">WOMEN</a>&nbsp;&nbsp;&nbsp;
+    <a href="#">CHILDREN</a>&nbsp;&nbsp;&nbsp;
+    <a href="#">YEAR</a>&nbsp;&nbsp;&nbsp;
+    <a href="#">PRICE</a>&nbsp;&nbsp;&nbsp;</h3>
+  </div>
+</nav>
+  <section id="shoesection">
+  <% @brand.sneakers.each do |sneaker| %>
+    <div class="sneaker">
+      <a href="/sneakers/<%= sneaker.id %>">
+        <img src="<%= sneaker.img_url %>">
+        <h2 class="sneakername"><%= sneaker.name %><br><span style="color:yellow"><%= sneaker.price %></span> </h2>
+      </a>
+      <%= link_to "Edit", edit_sneaker_path(sneaker.id) if @current_user %>
+    </div>
+  <% end %>
+  </section>
+  <footer>
+    <h1>Team Decade</h1>
+  <footer>

@@ -1,5 +1,5 @@
 <h2>Add a New Sneaker</h2>
-<%= form_for @sneaker do |f| %>
+<%= form_for [@brand, @sneaker] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 

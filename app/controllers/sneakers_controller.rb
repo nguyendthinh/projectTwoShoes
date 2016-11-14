@@ -7,11 +7,13 @@ class SneakersController < ApplicationController
   end
 
   def new
-    @sneaker = Sneaker.new
+    @brand = Brand.find(params[:brand_id])
+    @sneaker = @brand.sneakers.new
   end
 
   def create
-    @sneaker = Sneaker.create!(sneaker_params)
+    @brand = Brand.find(params[:brand_id])
+    @sneaker = @brand.sneakers.create(sneaker_params)
     redirect_to @sneaker
   end
 
