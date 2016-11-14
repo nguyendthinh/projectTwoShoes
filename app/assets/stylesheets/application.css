@@ -15,7 +15,8 @@
  */
 
 html {
-  background-color: black;
+background-color: black;
+height: 100%;
 }
 
 a {
@@ -61,7 +62,7 @@ nav {
 }
 
 h1 a {
-  color: white;
+  color: yellow;
   font-family: "Arial Black";
   font-weight: bold;
   font-size: 40px;
@@ -74,6 +75,10 @@ h1 a:hover {
   color: none;
 }
 
+h1 {
+  color: yellow;
+}
+
 .slides {
   width: 80%;
   height: auto;
@@ -83,4 +88,10 @@ h1 a:hover {
 #brandnav {
   margin-top: 1px;
   background-color: black;
+}
+
+footer {
+  font-family: "Arial Black";
+  margin-top: 60px;
+  background-color: red;
 }

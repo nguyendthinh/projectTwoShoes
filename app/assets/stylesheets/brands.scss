@@ -11,6 +11,7 @@ h2 {
 #brandname {
   font-size: 2.5em;
   margin-bottom: 40px;
+  color: white;
 }
 
 img {
@@ -42,4 +43,17 @@ a {
 
 .sneaker {
   margin: 10px;
+  border-style: outset;
+  border-width: 5px;
+  border-radius: 30px;
+}
+
+.sneaker img {
+  border-radius: 25px 25px 0 0;
+}
+
+.sneaker:hover {
+  border-style: inset;
+  border-color: red;
+  box-shadow: 2px 2px 1px yellow;
 }

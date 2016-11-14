@@ -1,16 +1,9 @@
 Rails.application.routes.draw do
-  get 'sneaker/index'
-
-  get 'sneaker/show'
-
-  get 'sneaker/edit'
-
-  get 'sneaker/new'
-
   root 'brands#index'
 
-  resources :brands
-  resources :sneakers
+
+  resources :brands, only: [:new, :create, :new, :create, :edit, :update, :destroy, :show]
+  resources :sneakers, only: [:new, :create, :edit, :update, :destroy, :show]
   resources :users
   resource :session
   resources :orders

@@ -14,3 +14,5 @@
 
   <%= f.submit "Submit" %>
 <% end %>
+<br>
+<%= link_to "Delete", @sneaker, method: :delete, class: "delete" if @current_user%>

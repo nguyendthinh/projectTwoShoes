@@ -43,8 +43,32 @@ lebron.sneakers.create(
 {name: "Nike Lebron X (10) EXT Cork", img_url: "http://images.bigcartel.com/product_images/125725833/IMG_0103.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "9 in Mens", price: "$599.99"}
 )
 
+lebron.sneakers.create(
+{name: "Nike Lebron X (10) EXT Cork", img_url: "http://images.bigcartel.com/product_images/125725833/IMG_0103.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "9 in Mens", price: "$599.99"}
+)
+
+lebron.sneakers.create(
+{name: "Nike Lebron X (10) EXT Cork", img_url: "http://images.bigcartel.com/product_images/125725833/IMG_0103.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "9 in Mens", price: "$599.99"}
+)
+
 nikerunning.sneakers.create(
 {name: "Nike Air Max 90 Infrared 2010", img_url: "http://images.bigcartel.com/product_images/135761412/IMG_0949.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "10.5 in Mens", price: "$159.99"}
+)
+
+nikerunning.sneakers.create(
+{name: "Nike Air Max 90 Infrared 2010", img_url: "http://images.bigcartel.com/product_images/135761412/IMG_0949.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "10.5 in Mens", price: "$159.99"}
+)
+
+nikerunning.sneakers.create(
+{name: "Nike Air Max 90 Infrared 2010", img_url: "http://images.bigcartel.com/product_images/135761412/IMG_0949.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "10.5 in Mens", price: "$159.99"}
+)
+
+nikebasketball.sneakers.create(
+{name: "Nike Zoom Rookie HOH Exclusive '666'", img_url: "http://images.bigcartel.com/product_images/135761628/IMG_8178.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "8 in Mens", price: "$329.99"}
+)
+
+nikebasketball.sneakers.create(
+{name: "Nike Zoom Rookie HOH Exclusive '666'", img_url: "http://images.bigcartel.com/product_images/135761628/IMG_8178.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "8 in Mens", price: "$329.99"}
 )
 
 nikebasketball.sneakers.create(

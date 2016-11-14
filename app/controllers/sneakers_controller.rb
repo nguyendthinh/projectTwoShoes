@@ -6,16 +6,13 @@ class SneakersController < ApplicationController
     @sneaker = Sneaker.find(params[:id])
   end
 
-  def edit
-  end
-
   def new
     @sneaker = Sneaker.new
   end
 
   def create
     @sneaker = Sneaker.create!(sneaker_params)
-    redirect_to brand_path(brand)
+    redirect_to @sneaker
   end
 
   def edit
@@ -36,7 +33,7 @@ class SneakersController < ApplicationController
 
   private
   def sneaker_params
-    params.require(:sneaker).permit(:name, :img_url, :price, :shoesize)
+    params.require(:sneaker).permit(:name, :img_url, :price, :shoesize, :brand_id)
   end
 
 

@@ -1,6 +1,12 @@
 <h2 id="sneakername"><%= @sneaker.name %></h2>
-<div class="sneaker">
+<div class="onesneaker">
 <img class="sneakerpic" src="<%= @sneaker.img_url %>" />
 <p><b>Shoe Size:</b> <%= @sneaker.shoesize %> - <b>Price:</b> <%= @sneaker.price %></p>
-<h2 class="addtocart"><%= link_to "Add to Cart"%></h2>
+<a href="#">
+  <div class="addtocart">
+    <h3>
+      Add to Cart
+    </h3>
+  </div>
+</a>
 </div>

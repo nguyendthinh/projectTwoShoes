@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #sneakername {
-  color: white;
+  color: yellow;
 }
 
 p {
@@ -17,6 +17,16 @@ p {
   text-align: center;
 }
 
-.addtocart:hover {
-  color: red;
+.addtocart {
+  margin: 0 auto;
+  background-color: red;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  padding: .5px;
+}
+//
+h3 {
+  line-height: 10px;
 }
