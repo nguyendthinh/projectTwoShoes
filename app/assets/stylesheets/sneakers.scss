@@ -21,7 +21,7 @@ p {
   clear: both;
 }
 
-.addtocart {
+button {
   margin: 0 auto;
   background-color: red;
   height: 50px;
@@ -29,6 +29,8 @@ p {
   text-align: center;
   border-radius: 10px;
   padding: .5px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h3 {

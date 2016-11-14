@@ -5,13 +5,7 @@
 <aside>
 <p><b>Shoe Size:</b> <%= @sneaker.shoesize %> - <b>Price:</b> <%= @sneaker.price %></p>
 
-<a href="#">
-  <div class="addtocart">
-    <h3>
-      Add to Cart
-    </h3>
-  </div>
-</a>
+<%= link_to "<button class='addtocart'>Add to Cart</button>".html_safe %>
 </aside>
 
 </div>
