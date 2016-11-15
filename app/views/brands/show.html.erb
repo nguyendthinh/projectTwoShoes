@@ -1,4 +1,4 @@
-<h2 id="brandname"><%= @brand.name %> <%= link_to("(+)", new_brand_sneaker_path(@brand.id)) if @current_user && @current_user.admin? %></h2>
+<h2 id="brandname"><%= @brand.name.upcase %> <%= link_to("(+)", new_brand_sneaker_path(@brand.id)) if @current_user && @current_user.admin? %></h2>
 <nav>
   <div class="size">
   <h3>

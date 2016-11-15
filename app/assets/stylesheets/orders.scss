@@ -1,3 +1,38 @@
 // Place all the styles related to the Orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cart {
+  margin-top: 20px;
+}
+
+h2 {
+  color: white;
+  font-family: "Arial";
+  letter-spacing: 1px;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+#cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartsneaker {
+  margin: 10px;
+  border-width: 5px;
+  border-radius: 30px;
+}
+
+h3 {
+  font-family: "Arial";
+  margin-bottom: 40px;
+}
+
+.clearcart {
+  margin-bottom: 30px;
+}
