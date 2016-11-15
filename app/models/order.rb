@@ -1,4 +1,4 @@
 class Order < ApplicationRecord
   has_many :sneakers
-  belongs_to :users
+  belongs_to :users, optional: true
 end

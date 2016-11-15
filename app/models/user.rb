@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :sneakers
+  has_many :orders
 end

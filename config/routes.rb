@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'brands#index'
 
+  post '/update/:sneaker_id' => 'orders#update', :as => 'update'
+  post '/clear/orders' => 'orders#clear', :as => 'clear'
 
   resources :brands do
     resources :sneakers, only: [:new, :create, :edit, :update, :destroy, :show]

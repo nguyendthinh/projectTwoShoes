@@ -1,1 +1,7 @@
-ORDER
+<% @order.each do |sneaker| %>
+  <img src="<%= sneaker['img_url'] %>" />
+  <p><%= sneaker["name"] %></p> <p><%= sneaker["price"] %> - <%= sneaker["shoesize"] %></p>
+<% end %>
+
+
+<%= button_to "Clear", clear_path%>

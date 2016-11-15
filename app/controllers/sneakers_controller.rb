@@ -38,5 +38,4 @@ class SneakersController < ApplicationController
     params.require(:sneaker).permit(:name, :img_url, :price, :shoesize, :brand_id)
   end
 
-
 end
