@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   post '/update/:sneaker_id' => 'orders#update', :as => 'update'
   post '/clear/orders' => 'orders#clear', :as => 'clear'
+  get "orders" => "orders#index", :as => "current_order"
 
   resources :brands do
     resources :sneakers, only: [:new, :create, :edit, :update, :destroy, :show]
