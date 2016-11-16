@@ -1,16 +1,21 @@
 <h2>Add a New Sneaker</h2>
 <%= form_for [@brand, @sneaker] do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br><br>
 
-  <%= f.label :img_url %>
-  <%= f.text_field :img_url %>
+  &nbsp;&nbsp;
+  <%= f.label :img_url %>:
+  <%= f.text_field :img_url %><br><br>
 
-  <%= f.label :shoesize %>
-  <%= f.text_field :shoesize %>
+  <%= f.label :shoesize %>:
+  <%= f.text_field :shoesize %><br><br>
 
-  <%= f.label :price %>
-  <%= f.text_field :price %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= f.label :price %>:
+  <%= f.text_field :price %><br><br>
 
   <%= f.submit "Submit" %>
 <% end %>
+
+<%= image_tag ("floatingshoe.png"), :class => "floatingshoe" %>

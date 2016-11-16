@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20161114202427) do
     t.string   "name"
     t.string   "img_url"
     t.string   "shoesize"
-    t.string   "price"
+    t.integer  "price"
     t.integer  "brand_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -45,9 +45,9 @@ ActiveRecord::Schema.define(version: 20161114202427) do
     t.string   "username"
     t.string   "password"
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean  "admin"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "admin",      default: false
   end
 
   add_foreign_key "orders", "sneakers", column: "sneakers_id"

@@ -21,16 +21,17 @@ before_action :set_session, :total
     redirect_to orders_path
   end
 
-  def total
-    @total
-    session[:order].each do |sneaker|
-      @allPrices = sneaker["price"]
-      puts "*" * 50
-      puts @allPrices
-      puts "*" * 50
-      @total + @allPrices = @total
+    def total
+      @total = []
+      session[:order].each do |sneaker|
+        @allPrices = sneaker["price"]
+        puts "*" * 50
+        puts @allPrices
+        puts "*" * 50
+        @total << @allPrices
+      end
+      @totalprice = @total.inject(0, :+)
     end
-  end
 
   def destroy
     session[:order].delete_if {|sneaker| sneaker["id"] == params[:sneaker_id].to_i}

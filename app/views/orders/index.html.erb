@@ -2,9 +2,7 @@
 
 <% if @order.empty? %>
 <h3>You currently have no items in your cart.</h3>
-
 <%= image_tag ("floatingshoe.png"), :class => "floatingshoe" %>
-
 <% end %>
 
 <% if @order.any? %>
@@ -16,17 +14,21 @@
   <div class="cartsneaker">
   <img src="<%= sneaker['img_url'] %>" />
   <p><b><%= sneaker["name"] %></b></p>
-  <p><b style="color:yellow">Price:</b> <%= sneaker["price"] %>&nbsp;&nbsp;<b style="color:yellow">Size:</b> <%= sneaker["shoesize"] %></p>
+  <p><b style="color:yellow">Price:</b> $<%= sneaker["price"] %>&nbsp;&nbsp;<b style="color:yellow">Size:</b> <%= sneaker["shoesize"] %></p>
   <%= link_to "<button class='removeitem'>Remove</button>".html_safe, destroy_order_path(sneaker["id"]), :method => :delete, :confirm => "Are you sure you want to remove this from the cart?" %>
   </div>
 <% end %>
 </div>
 
+
+<% if @order.any? %>
 <div id="orderdetails">
-  <h3>Order Details:</h3>
-  <p><b style="color:yellow">Subtotal:</b> <%= @total %></p>
-  <p><b style="color:yellow">Grand Total:</b><%= @total %></p>
+  <h2 style="color:red">Order Details:</h2>
+  <p class="subtotal"><b style="color:yellow">Subtotal:</b> $<%= @totalprice %></p>
+  <p><b style="color:yellow">Grand Total:</b> $<%= @totalprice %></p>
+  <%= link_to "<button>CHECKOUT</button>".html_safe %>
 </div>
+<% end %>
 
 <% if @order != [] %>
 <footer>

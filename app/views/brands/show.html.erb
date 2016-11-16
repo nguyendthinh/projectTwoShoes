@@ -14,7 +14,7 @@
     <div class="sneaker">
       <a href="/sneakers/<%= sneaker.id %>">
         <img src="<%= sneaker.img_url %>">
-        <h2 class="sneakername"><%= sneaker.name %><br><span style="color:yellow"><%= sneaker.price %></span> </h2>
+        <h2 class="sneakername"><%= sneaker.name %><br><span style="color:yellow">$<%= sneaker.price %></span> </h2>
       </a>
       <%= link_to "Edit", edit_sneaker_path(sneaker.id) if @current_user && @current_user.admin? %>
     </div>
