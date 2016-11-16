@@ -17,10 +17,15 @@
   <img src="<%= sneaker['img_url'] %>" />
   <p><b><%= sneaker["name"] %></b></p>
   <p><b style="color:yellow">Price:</b> <%= sneaker["price"] %>&nbsp;&nbsp;<b style="color:yellow">Size:</b> <%= sneaker["shoesize"] %></p>
-  <%= link_to "<button class='removeitem'>Remove Item</button>".html_safe, destroy_order_path(sneaker["id"]), :method => :delete, :confirm => "Are you sure you want to remove this from the cart?" %>
+  <%= link_to "<button class='removeitem'>Remove</button>".html_safe, destroy_order_path(sneaker["id"]), :method => :delete, :confirm => "Are you sure you want to remove this from the cart?" %>
   </div>
-
 <% end %>
+</div>
+
+<div id="orderdetails">
+  <h3>Order Details:</h3>
+  <p><b style="color:yellow">Subtotal:</b> <%= @total %></p>
+  <p><b style="color:yellow">Grand Total:</b><%= @total %></p>
 </div>
 
 <% if @order != [] %>

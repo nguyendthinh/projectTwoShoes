@@ -37,3 +37,22 @@ h3 {
 .clearcart {
   margin-bottom: 30px;
 }
+
+.removeitem {
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  font-size: 14px;
+}
+
+button {
+  margin: 0 auto;
+  background-color: red;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  padding: .5px;
+  font-size: 20px;
+  font-weight: bold;
+}
