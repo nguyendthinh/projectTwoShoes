@@ -1,22 +1,25 @@
-<h2>CART</h2>
+<h2>Cart</h2>
 
 <% if @order.empty? %>
 <h3>You currently have no items in your cart.</h3>
+
+<%= image_tag ("floatingshoe.png"), :class => "floatingshoe" %>
+
+<% end %>
+
+<% if @order.any? %>
+<%= link_to "<button class='clearcart'>Clear Cart</button>".html_safe, clear_path, :method => :post %>
 <% end %>
 
 <div id="cart">
 <% @order.each do |sneaker| %>
   <div class="cartsneaker">
   <img src="<%= sneaker['img_url'] %>" />
-  <p><b style="color:red"><%= sneaker["name"] %></b></p>
-  <p><b style="color:yellow">Price</b>: <%= sneaker["price"] %>&nbsp;&nbsp;<b style="color:yellow">Size</b>: <%= sneaker["shoesize"] %></p>
+  <p><b><%= sneaker["name"] %></b></p>
+  <p><b style="color:yellow">Price:</b> <%= sneaker["price"] %>&nbsp;&nbsp;<b style="color:yellow">Size:</b> <%= sneaker["shoesize"] %></p>
   </div>
 <% end %>
 </div>
-
-<% if @order.any? %>
-<%= link_to "<button class='clearcart'>Clear Cart</button>".html_safe, clear_path, :method => :post %>
-<% end %>
 
 <% if @order != [] %>
 <footer>

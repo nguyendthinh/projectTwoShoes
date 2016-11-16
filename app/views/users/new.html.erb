@@ -1,13 +1,15 @@
 <h2>Sign Up</h2>
 <%= form_for @user do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :name %>:
+  <%= f.text_field :name %><br><br>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %>
+  <%= f.label :username %>:
+  <%= f.text_field :username %><br><br>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+  &nbsp;<%= f.label :password %>:
+  <%= f.password_field :password %><br><br>
 
   <%= f.submit "Submit" %>
 <% end %>
+
+<%= image_tag ("floatingshoe.png"), :class => "floatingshoe" %>

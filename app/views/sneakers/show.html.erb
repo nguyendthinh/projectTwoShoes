@@ -3,7 +3,7 @@
 <img class="sneakerpic" src="<%= @sneaker.img_url %>" />
 
 <aside>
-<p><b>Shoe Size:</b> <%= @sneaker.shoesize %> - <b>Price:</b> <%= @sneaker.price %></p>
+<p><b style="color:yellow">Shoe Size:</b> <%= @sneaker.shoesize %> &nbsp; <b style="color:yellow">Price:</b> <%= @sneaker.price %></p>
 
 <%= link_to "<button class='addtocart'>Add to Cart</button>".html_safe, update_path(:sneaker_id => @sneaker), :method => :post %>
 </aside>

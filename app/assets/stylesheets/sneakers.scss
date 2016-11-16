@@ -5,11 +5,13 @@
 #sneakername {
   color: yellow;
   font-size: 2.5em;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 p {
   color: white;
-  font-family: Arial;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sneakerpic {
@@ -32,6 +34,10 @@ button {
   padding: .5px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.addtocart {
+  margin: 15px;
 }
 
 h3 {
