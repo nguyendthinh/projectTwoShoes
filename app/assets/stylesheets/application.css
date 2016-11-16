@@ -111,11 +111,20 @@ footer {
   font-family: 'Bungee', cursive;
   margin-top: 30px;
   background-color: red;
-  padding: -10px;
+  padding: .017px;
   box-shadow: 0px 500px 0 500px red;
+}
+
+h1, footer {
+  color: white;
 }
 
 .floatingshoe {
   margin-top: 70px;
   margin-left: 30px;
+}
+
+.socialmedia {
+  width: 200px;
+  length: 200px;
 }

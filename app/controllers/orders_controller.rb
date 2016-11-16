@@ -21,4 +21,9 @@ before_action :set_session
     redirect_to orders_path
   end
 
+  def destroy
+    session[:order].delete_if {|sneaker| sneaker["id"] == params[:sneaker_id].to_i}
+    redirect_to orders_path
+  end
+
 end
