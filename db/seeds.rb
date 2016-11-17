@@ -28,49 +28,41 @@ nikerunning = Brand.create(
 )
 
 airjordan.sneakers.create(
-{name: "Air Jordan 1 'Chicago' 2015", img_url: "http://images.bigcartel.com/product_images/161016487/image.jpg?auto=format&fit=max&h=1000&w=1000", shoesize: "10 in Mens", price: 500}
+{name: "Air Jordan 1 Retro High OG 'Black Toe'", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/i/nike_jordan_1_black_toe_blitz1.jpg", shoesize: "11 in Mens", price: 350}
 )
-
 airjordan.sneakers.create(
-{name: "Air Jordan 1 'Shattered Backboards'", img_url: "http://images.bigcartel.com/product_images/161016055/image.jpg?auto=format&fit=max&h=1000&w=1000", shoesize: "12 in Mens", price: 325}
+{name: "Air Jordan 1 Retro High 'Unsupreme'", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/j/aj_1_black_cement_blitz1.jpg", shoesize: "9.5 in Mens", price: 80}
 )
-
 airjordan.sneakers.create(
-{name: "Nike Air Jordan 1 'Blacktoe'", img_url: "http://images.bigcartel.com/product_images/161593552/image.jpg?auto=format&fit=max&h=1000&w=1000", shoesize: "13 in Mens", price: 450}
+{name: "Air Jordan 1 Retro High OG 'David Letterman'", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/j/o/jordan_1_letterman_blitz1.jpg", shoesize: "10.5 in Mens", price: 100}
 )
 
 lebron.sneakers.create(
-{name: "Nike Lebron X (10) EXT Cork", img_url: "http://images.bigcartel.com/product_images/125725833/IMG_0103.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "9 in Mens", price: 600}
+{name: "Nike Lebron X EXT Cork QS", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/f/sf1a1311_blitz1.jpg", shoesize: "10 in Mens", price: 800}
 )
-
 lebron.sneakers.create(
-{name: "Nike Lebron X (10) EXT Cork", img_url: "http://images.bigcartel.com/product_images/125725833/IMG_0103.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "9 in Mens", price: 600}
+{name: "Nike Lebron 9 P.S. Elite", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/e/lebron_miamibb_blitz6.jpg", shoesize: "11 in Mens", price: 500}
 )
-
 lebron.sneakers.create(
-{name: "Nike Lebron X (10) EXT Cork", img_url: "http://images.bigcartel.com/product_images/125725833/IMG_0103.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "9 in Mens", price: 600}
+{name: "Nike Lebron XII Elite SP/Pigalle", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/j/o/jordan_20lebron_20pigalle_20blitz1.jpg", shoesize: "10 in Mens", price: 250}
 )
 
 nikerunning.sneakers.create(
-{name: "Nike Air Max 90 Infrared 2010", img_url: "http://images.bigcartel.com/product_images/135761412/IMG_0949.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "10.5 in Mens", price: 160}
+{name: "Nike Air Max 90 OG 'Infrared'", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/i/nike_airmaxredblack_blitz6_1.jpg", shoesize: "9.5 in Mens", price: 180}
 )
-
 nikerunning.sneakers.create(
-{name: "Nike Air Max 90 Infrared 2010", img_url: "http://images.bigcartel.com/product_images/135761412/IMG_0949.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "10.5 in Mens", price: 160}
+{name: "Nike Air Max 95 OG 'Neon'", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/m/am95_20og_202015_20blitz1.jpg", shoesize: "8 in Mens", price: 220}
 )
-
 nikerunning.sneakers.create(
-{name: "Nike Air Max 90 Infrared 2010", img_url: "http://images.bigcartel.com/product_images/135761412/IMG_0949.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "10.5 in Mens", price: 160}
+{name: "Nike Air Max 1 Ultra LOTC QS 'Paris'", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/m/am1_20lotc_20prem_20paris_20blitz1.jpg", shoesize: "7 in Womens", price: 200}
 )
 
 nikebasketball.sneakers.create(
-{name: "Nike Zoom Rookie HOH Exclusive '666'", img_url: "http://images.bigcartel.com/product_images/135761628/IMG_8178.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "8 in Mens", price: 330}
+{name: "Nike Air More Uptempo 2012", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/i/nike_20uptempo_20penny_20blitz1.jpg", shoesize: "9.5 in Mens", price: 250}
 )
-
 nikebasketball.sneakers.create(
-{name: "Nike Zoom Rookie HOH Exclusive '666'", img_url: "http://images.bigcartel.com/product_images/135761628/IMG_8178.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "8 in Mens", price: 330}
+{name: "Nike Air Pressure", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/i/air_pressure_blitz1.jpg", shoesize: "10 in Mens", price: 300}
 )
-
 nikebasketball.sneakers.create(
-{name: "Nike Zoom Rookie HOH Exclusive '666'", img_url: "http://images.bigcartel.com/product_images/135761628/IMG_8178.JPG?auto=format&fit=max&h=1000&w=1000", shoesize: "8 in Mens", price: 330}
+{name: "Nike Foamposite One Gold", img_url: "http://www.projectblitz.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/u/surpeme_goldfoam_blitz1.jpg", shoesize: "8 in Mens", price: 300}
 )
