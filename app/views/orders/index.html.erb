@@ -8,7 +8,7 @@
 <% if @order.any? %>
 <%= link_to "<button class='clearcart'>Clear Cart</button>".html_safe, clear_path, :method => :post %>
 <% end %>
-
+<!--
 <div id="cart">
 <% @order.each do |sneaker| %>
   <div class="cartsneaker">
@@ -18,17 +18,53 @@
   <%= link_to "<button class='removeitem'>Remove</button>".html_safe, destroy_order_path(sneaker["id"]), :method => :delete, :confirm => "Are you sure you want to remove this from the cart?" %>
   </div>
 <% end %>
-</div>
-
+</div> -->
 
 <% if @order.any? %>
+<table id="cart" cellspacing="30px">
+  <tr>
+    <th>PRODUCT</th>
+    <th>SIZE</th>
+    <th>PRICE</th>
+  </tr>
+  <% @order.each do |sneaker| %>
+  <tr>
+    <td><img class="cartpic" src="<%= sneaker['img_url'] %>" /></td>
+    <td><%= sneaker["shoesize"] %></td>
+    <td>$<%= sneaker["price"] %></td>
+    <td> <%= link_to "<button class='removeitem'>Remove</button>".html_safe, destroy_order_path(sneaker["id"]), :method => :delete, :confirm => "Are you sure you want to remove this from the cart?" %></td>
+  </tr>
+  <% end %>
+  <tr>
+    <td></td>
+    <td><b style="color:yellow">SUBTOTAL:</b></td>
+    <td>$<%= @totalprice %></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="grand"><b style="color:yellow">GRAND TOTAL:</td>
+    <td class="grand">$<%= @totalprice %></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><%= link_to "<button class='checkout'>CHECKOUT</button>".html_safe %></td>
+    <td></td>
+  </tr>
+</table>
+<% end %>
+
+
+<!-- <% if @order.any? %>
 <div id="orderdetails">
   <h2 style="color:red">Order Details:</h2>
-  <p class="subtotal"><b style="color:yellow">Subtotal:</b> $<%= @totalprice %></p>
-  <p><b style="color:yellow">Grand Total:</b> $<%= @totalprice %></p>
+  <p class="subtotal"><b style="color:yellow">SUBTOTAL:</b> $<%= @totalprice %></p>
+  <p><b style="color:yellow">GRAND TOTAL:</b> $<%= @totalprice %></p>
   <%= link_to "<button>CHECKOUT</button>".html_safe %>
 </div>
-<% end %>
+<% end %> -->
 
 <% if @order != [] %>
 <footer>

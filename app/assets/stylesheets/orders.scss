@@ -29,6 +29,25 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+th {
+  font-size: 20px;
+  color: yellow;
+}
+
+td {
+  font-size: 20px;
+}
+
+.grand {
+  font-size: 40px;
+}
+
+.cartpic {
+  width: 200px;
+  height: auto;
 }
 
 h3 {
