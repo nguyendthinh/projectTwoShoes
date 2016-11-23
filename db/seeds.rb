@@ -11,6 +11,8 @@ Order.destroy_all
 Brand.destroy_all
 Sneaker.destroy_all
 
+adminny = User.create!(username: "admin", password:"admin", name:"minny", admin: true )
+
 airjordan = Brand.create(
   {name: "Air Jordan"}
 )
