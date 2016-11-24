@@ -1,4 +1,7 @@
 <h2>Sign Up</h2>
+
+<!-- you could break this out into a form partial to DRY up your new and edit -->
+
 <%= form_for @user do |f| %>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.label :name %>:
   <%= f.text_field :name %><br><br>

@@ -6,7 +6,8 @@
     <a href="#">WOMEN</a>&nbsp;&nbsp;&nbsp;
     <a href="#">CHILDREN</a>&nbsp;&nbsp;&nbsp;
     <a href="#">YEAR</a>&nbsp;&nbsp;&nbsp;
-    <a href="#">PRICE</a>&nbsp;&nbsp;&nbsp;</h3>
+    <a href="#">PRICE</a>&nbsp;&nbsp;&nbsp;
+  </h3>
   </div>
 </nav>
   <section id="shoesection">
@@ -14,8 +15,11 @@
     <div class="sneaker">
       <a href="/sneakers/<%= sneaker.id %>">
         <img src="<%= sneaker.img_url %>">
-        <h2 class="sneakername"><%= sneaker.name %><br><span style="color:yellow">$<%= sneaker.price %></span> </h2>
+        <h2 class="sneakername"><%= sneaker.name %>
+          <br><span style="color:yellow">$<%= sneaker.price %></span>
+        </h2>
       </a>
+      <!-- you could just say `if @current_user.admin?` to simplify this expression -->
       <%= link_to "Edit", edit_sneaker_path(sneaker.id) if @current_user && @current_user.admin? %>
     </div>
   <% end %>

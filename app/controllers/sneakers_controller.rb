@@ -1,5 +1,13 @@
 class SneakersController < ApplicationController
-  def index
+
+  # you can DRY up some of your controller code with the code below
+  
+  # before_action :set_sneaker, only: [:edit, :update, :show, :destroy]
+  # def set_sneaker
+  #   @sneaker = Sneaker.find(params[:id])
+  # end
+
+  def index # dont think you need this method, since you're showing sneakers via brands
   end
 
   def show
