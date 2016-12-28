@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -27,14 +28,15 @@
         <p class="usersign"><%= link_to "Welcome, #{@current_user.name}!", user_path(@current_user) %>&nbsp;&nbsp;
       <% end %>
 
-      <%= link_to "Cart", orders_path %>&nbsp;&nbsp;
+      <%= link_to "Cart", orders_path %>
       <%= link_to "Sign Out", session_path, method: :delete %></p>
   <% else %>
-      <p class="usersign">
-      Welcome, Guest!&nbsp;&nbsp;
-      <%= link_to "Cart", orders_path %>&nbsp;&nbsp;
-      <%= link_to "Sign Up", new_user_path %>&nbsp;&nbsp;
-      <%= link_to "Sign In", new_session_path %></p>
+      <div class="usersign">
+        <p>Welcome, Guest!</p>
+        <%= link_to "Cart", orders_path %>
+        <%= link_to "Sign Up", new_user_path %>
+        <%= link_to "Sign In", new_session_path %>
+      </div>
   <% end %>
     </nav>
 

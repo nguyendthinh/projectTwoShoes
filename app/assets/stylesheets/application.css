@@ -15,9 +15,9 @@
  */
 
 html {
-  background: url("https://www.walldevil.com/wallpapers/a39/background-rgency-black-texture-wallpaper-metal-pictures-wallpapers-static.jpg");
+  background: url("https://www.walldevil.com/wallpapers/a39/background-rgency-black-texture-wallpaper-metal-pictures-wallpapers-static.jpg") no-repeat center center fixed;
 /*background: linear-gradient(to right, black, gray);*/
-height: 100%;
+height: auto;
 }
 
 body {
@@ -64,12 +64,24 @@ nav {
   margin-left: 40%;
   margin-top: 20px;
   font-family: 'Roboto Mono', monospace;
-
+  width: 25em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
   /*margin-top: 40px;*/
+}
+
+.usersign p {
+  margin: 15px;
+  width: auto;
 }
 
 .usersign a {
   color: white;
+  width: 1000000px;
 }
 
 #usernav, .usersign {
@@ -96,7 +108,7 @@ h1 {
 
 .slides {
   width: 100%;
-  min-height: 50%;
+  height: 100%;
   display: inline-block;
   z-index: 0;
 }
@@ -127,4 +139,30 @@ h1, footer {
 .socialmedia {
   width: 200px;
   length: 200px;
+}
+
+@media screen and (max-width: 1075px) {
+  #usernav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .usersign {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: .85em;
+  }
+  #brandnav {
+    padding-bottom: 0;
+  }
+  #brandnav a {
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }

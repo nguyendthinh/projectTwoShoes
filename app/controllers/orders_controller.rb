@@ -25,9 +25,6 @@ before_action :set_session, :total
       @total = []
       session[:order].each do |sneaker|
         @allPrices = sneaker["price"]
-        puts "*" * 50
-        puts @allPrices
-        puts "*" * 50
         @total << @allPrices
       end
       @totalprice = @total.inject(0, :+)
