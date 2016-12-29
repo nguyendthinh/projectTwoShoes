@@ -41,7 +41,7 @@ button {
 }
 
 h3 {
-  line-height: 10px;
+  line-height: 1em;
 }
 
 .newsneaker {
@@ -68,3 +68,10 @@ h3 {
 //   border-color: red;
 //   box-shadow: 2px 2px 1px yellow;
 // }
+
+@media screen and (max-width: 415px) {
+  #sneakername {
+    font-size: 2em;
+    padding: .25em;
+  }
+}

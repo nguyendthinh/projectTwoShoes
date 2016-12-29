@@ -115,6 +115,10 @@ button {
     left: -9999px;
   }
 
+  h3 a {
+    line-height: 1.5em;
+  }
+
   .cartitem:nth-of-type(2):before { content: "Size"; color: yellow; }
   .cartitem:nth-of-type(3):before { content: "Prize"; color: yellow;}
 
