@@ -5,6 +5,7 @@
 <%= image_tag ("floatingshoe.png"), :class => "floatingshoe" %>
 <% end %>
 
+<div id="cartinfo">
 <% if @order.any? %>
 <%= link_to "<button class='clearcart'>Clear Cart</button>".html_safe, clear_path, :method => :post %>
 <% end %>
@@ -29,9 +30,9 @@
   </tr>
   <% @order.each do |sneaker| %>
   <tr>
-    <td><img class="cartpic" src="<%= sneaker['img_url'] %>" /></td>
-    <td><%= sneaker["shoesize"] %></td>
-    <td>$<%= sneaker["price"] %></td>
+    <td class="cartitem"><img class="cartpic" src="<%= sneaker['img_url'] %>" /></td>
+    <td class="cartitem"><%= sneaker["shoesize"] %></td>
+    <td class="cartitem">$<%= sneaker["price"] %></td>
     <td> <%= link_to "<button class='removeitem'>Remove</button>".html_safe, destroy_order_path(sneaker["id"]), :method => :delete, :confirm => "Are you sure you want to remove this from the cart?" %></td>
   </tr>
   <% end %>
@@ -55,6 +56,7 @@
   </tr>
 </table>
 <% end %>
+</div>
 
 
 <!-- <% if @order.any? %>
