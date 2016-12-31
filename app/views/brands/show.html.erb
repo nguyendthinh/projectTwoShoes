@@ -1,5 +1,5 @@
 <h2 id="brandname"><%= @brand.name.upcase %> <%= link_to("(+)", new_brand_sneaker_path(@brand.id)) if @current_user && @current_user.admin? %></h2>
-<nav>
+<nav class="sizenav">
   <div class="size">
   <h3>
     <a href="#">MEN</a>&nbsp;&nbsp;&nbsp;

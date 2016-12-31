@@ -154,18 +154,33 @@ h1, footer {
     margin-left: 0;
     font-size: 2.5vw;
   }
-  #brandnav {
-    padding-bottom: 0;
-  }
   #brandnav a {
-    font-size: 3vw;
+    font-size: 2.5vw;
+  }
+  .gradient {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #brandnav a {
+    font-size: 4vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .gradient {
-    height: auto;
+  #brandnav {
+    padding-bottom: 0;
+  }
+  .usersign {
+    font-size: 3vw;
+  }
+  #usernav h1 {
+    margin-bottom: 10px;
+  }
+  .size a {
+    font-size: 3.75vw;
   }
 }
